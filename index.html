@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trbajo #3</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+	<div class="tit"><center>Trabajo Tres</center></div>
+
+<div class="cuadro" id="cuadro"></div>
+
+<input type="text" name="frase" id="frase" class="frase">
+
+	<input type="button" name="boton" value="mostrar" class="boton" onclick="mostrar();">	
+	<input type="text" name="ver" id="ver" class="ver">
+
+		<body onkeypress="teclado()">
+
+			<script >
+
+		function teclado(){
+
+	if(event.code=="KeyA")
+	{
+
+			var cuadroe=document.getElementById("cuadro");
+cuadro.className="c2";
+
+	}
+	else
+			if(event.code=="KeyW")
+	{
+
+			var cuadroe=document.getElementById("cuadro");
+cuadro.className="c3";
+
+	}
+	else
+					if(event.code=="KeyD")
+	{
+
+			var cuadroe=document.getElementById("cuadro");
+cuadro.className="c4";
+
+	}
+
+		}
+	function mostrar(){
+			var frase=document.getElementById("frase").value;
+		document.getElementById("ver").value=frase;
+	}
+
+				</script>
+				
+	<div class="l">Presione: A           W         D </div>
+	</font>
+			
+</font>
+</body>
+
+</body>
+</html>
